@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /usr/share/feren-conky-toggle
+/usr/share/feren-conky-toggle/feren-conky-toggle.py
+
+

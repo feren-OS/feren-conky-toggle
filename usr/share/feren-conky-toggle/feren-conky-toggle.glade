@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.10"/>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">/usr/share/feren-conky-toggle/conkyon.png</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">/usr/share/feren-conky-toggle/conkyoff.png</property>
+  </object>
+  <object class="GtkWindow" id="MainWind">
+    <property name="name">MainWind</property>
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Conky Toggler</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="icon_name">cs-desklets</property>
+    <property name="urgency_hint">True</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="width_request">730</property>
+        <property name="height_request">490</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Conky Toggler</property>
+            <attributes>
+              <attribute name="font-desc" value="Open Sans Light 10"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="scale" value="2.1000000000000001"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Welcome to the Feren OS Conky Toggler. With this tool, you can enable or disable the Clock that displays on the
+Desktop by default (Themed Conky).
+
+To enable or disable Conky, simply click the option below that you want.
+
+What's Conky? If you've heard of Rainmeter for Windows, then you would know that Rainmeter allows for custom
+gadget making. Just like Rainmeter, Conky allows for custom gadgets, whether it's a text design Conky or another
+design type.</property>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">52</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="EnableConky">
+            <property name="label" translatable="yes">Enable Conky (Default)</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">image1</property>
+            <property name="image_position">top</property>
+            <property name="always_show_image">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="DisableConky">
+            <property name="label" translatable="yes">Disable Conky</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">image2</property>
+            <property name="image_position">top</property>
+            <property name="always_show_image">True</property>
+          </object>
+          <packing>
+            <property name="x">370</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

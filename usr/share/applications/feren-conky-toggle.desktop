@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment=Enable or Disable the clock on the Desktop
+Terminal=false
+Name=Conky (Desktop Clock) Toggler
+Exec=conky-toggler-gui
+Type=Application
+Icon=cs-desklets
